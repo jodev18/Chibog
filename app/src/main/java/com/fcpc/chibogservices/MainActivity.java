@@ -39,14 +39,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void validate(String userName, String userPassword){
+
         if((userName.equals("Arvic Cruz")) && (userPassword.equals("1234"))){
             Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-            startActivity(intent); }
+            startActivity(intent);
+        }
             if((userName.equals("Ron Merced")) && (userPassword.equals("1234"))){
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 startActivity(intent);
-        }
-        }
+            }
     }
+}
 
 
