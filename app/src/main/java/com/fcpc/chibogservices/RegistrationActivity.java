@@ -31,7 +31,7 @@ public class RegistrationActivity extends AppCompatActivity {
         bSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                String nUser = tNewUser.getText().toString();
 
             }
         });
