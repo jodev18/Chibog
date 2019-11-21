@@ -25,6 +25,8 @@ public class RegistrationActivity extends AppCompatActivity {
         bSave = findViewById(R.id.btnSaveUser);
         tNewUser = findViewById(R.id.etNewUsername);
         tNewPass = findViewById(R.id.etNewPassword);
+
+        initButton();
     }
 
     private void initButton(){
@@ -32,7 +34,20 @@ public class RegistrationActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String nUser = tNewUser.getText().toString();
+                String nPass = tNewPass.getText().toString();
 
+                //Initial length validation.
+                if(nUser.length() >= 8){
+                    if(nPass.length() >= 8){
+
+                    }
+                    else{
+
+                    }
+                }
+                else{
+
+                }
             }
         });
     }
